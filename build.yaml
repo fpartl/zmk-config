@@ -19,10 +19,6 @@
 #
 ---
 include:
-  - board: sparkfun_pro_micro_rp2040
-    shield: sofle_left
-  - board: sparkfun_pro_micro_rp2040
-    shield: sofle_right
   - board: nice_nano
     shield: sofle_left
   - board: nice_nano
