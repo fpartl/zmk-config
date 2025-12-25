@@ -36,7 +36,7 @@
 &kp TAB   &kp Q  &kp W    &kp E    &kp R     &kp T                            &kp Y  &kp U     &kp I     &kp O    &kp P    &kp LBKT
 &kp ESC   &kp A  &kp S    &kp D    &kp F     &kp G                            &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp EXCL
 &kp LSHFT &kp Z  &kp X    &kp C    &kp V     &kp B      &kp C_MUTE &none      &kp N  &kp M    &kp COMMA &kp DOT  &kp FSLH &kp RET
-                 &kp LGUI &kp LALT &mo LOWER &kp SPACE  &kp LCTRL  &kp RET    &kp RALT &mo RAISE &kp F5  &kp PSCRN
+                 &kp LGUI &kp LALT &mo LOWER &kp LCTRL &kp SPACE  &kp RET    &kp RALT &mo RAISE &kp F5  &kp PSCRN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -66,8 +66,8 @@
             display-name = "lower";
             bindings = <
 &trans     &trans       &trans       &trans       &trans       &trans                        &trans    &trans    &trans   &trans    &trans  &trans
-&trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                        &trans    &kp MINUS    &kp LPAR &kp RPAR  &kp PIPE  &trans
-&kp CLCK     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &trans                      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans  &trans
+&trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                        &trans    &kp MINUS &kp EQUAL &kp PIPE &trans  &trans
+&kp CLCK     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &trans                      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp RBR  &trans
 &trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans        &trans  &trans  &trans    &trans    &trans   &trans    &trans  &trans
                         &trans       &trans       &trans       &trans        &trans  &trans  &trans    &trans    &trans   &trans
             >;
