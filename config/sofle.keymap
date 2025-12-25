@@ -67,7 +67,7 @@
             bindings = <
 &trans     &trans       &trans       &trans       &trans       &trans                        &trans    &trans    &trans   &trans    &trans  &trans
 &trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                        &trans    &kp MINUS &kp EQUAL &kp PIPE &trans  &trans
-&kp CLCK     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &trans                      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp RBR  &trans
+&kp CLCK     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &trans                      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp RBRC  &trans
 &trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans        &trans  &trans  &trans    &trans    &trans   &trans    &trans  &trans
                         &trans       &trans       &trans       &trans        &trans  &trans  &trans    &trans    &trans   &trans
             >;
