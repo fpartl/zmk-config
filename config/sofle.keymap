@@ -46,7 +46,7 @@
             bindings = <
 &trans              &trans              &trans              &trans              &trans              &trans                                                      &trans              &trans              &trans              &trans              &trans              &kp DEL
 &trans              &trans              &trans              &trans              &trans              &trans                                                      &trans              &kp PLUS            &kp EQUAL           &kp MINUS           &kp UNDERSCORE      &kp PIPE
-&kp CLCK            &trans              &trans              &trans              &trans              &trans                                                      &kp LEFT            &kp DOWN            &kp UP              &kp RIGHT           &kp RBKT            &trans
+&kp CLCK            &trans              &trans              &trans              &trans              &trans                                                      &kp LEFT            &kp DOWN            &kp UP              &kp RIGHT           &kp RBRC            &kp RBKT
 &trans              &trans              &trans              &trans              &trans              &trans              &trans              &trans              &kp HOME            &trans              &trans              &trans              &trans              &trans
                                         &trans              &trans              &trans              &trans              &trans              &trans              &trans              &trans              &trans              &trans
             >;
