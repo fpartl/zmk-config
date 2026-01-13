@@ -4,6 +4,7 @@
         "CLCK",
         "DLLR",
         "FSLH",
+        "gpios",
         "keymap",
         "LALT",
         "LBKT",
