@@ -16,6 +16,11 @@
 #define NUMBERS 3
 #define ADJUST 4
 
+
+&nice_view_spi {
+    cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
+};
+
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -23,10 +28,6 @@
             if-layers = <LOWER RAISE>;
             then-layer = <ADJUST>;
         };
-    };
-
-    &nice_view_spi {
-        cs-gpios = <&pro_micro 8 GPIO_ACTIVE_HIGH>;
     };
 
     keymap {
