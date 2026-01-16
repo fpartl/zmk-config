@@ -4,6 +4,7 @@
         "CLCK",
         "CTLR",
         "DLLR",
+        "dtsi",
         "FSLH",
         "gpios",
         "keymap",
