@@ -1,6 +1,16 @@
 ---
 include:
   - board: nice_nano_v2
+    shield: sofle_dongle
+    artifact-name: sofle_dongle
+  - board: nice_nano_v2
+    shield: settings_reset
+    artifact-name: settings_reset
+  - board: nice_nano_v2
     shield: sofle_left nice_view_adapter nice_view
+    artifact-name: sofle_left
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano_v2
     shield: sofle_right nice_view_adapter nice_view
+    artifact-name: sofle_right
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
