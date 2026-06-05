@@ -11,10 +11,6 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-#if IS_ENABLED(CONFIG_SHIELD_NICE_VIEW_ADAPTER)
-#include "hardware.dtsi"
-#endif
-
 #define BASE 0
 #define LOWER 1
 #define RAISE 2
