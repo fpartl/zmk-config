@@ -1,0 +1,22 @@
+# Copyright (c) 2024 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config NICE_VIEW_VCOM_KEEPALIVE
+    bool "Periodically refresh the nice!view to keep its VCOM toggling"
+    depends on ZMK_DISPLAY
+    help
+      Forces a full-screen redraw of the nice!view display on a fixed interval.
+      Sharp memory-in-pixel (MIP) panels need VCOM toggled regularly or the
+      image decays into garbage; the ls0xx driver only toggles VCOM when ZMK
+      sends a frame. On a split peripheral the widget rarely updates, so this
+      keeps the panel refreshed. Enabled automatically by the nice_view_mip
+      shield.
+
+config NICE_VIEW_VCOM_KEEPALIVE_INTERVAL_MS
+    int "nice!view VCOM keepalive interval (ms)"
+    depends on NICE_VIEW_VCOM_KEEPALIVE
+    default 1000
+    help
+      How often to force a full-screen redraw. Lower is safer for the panel but
+      costs a little more power. Raise it if the image stays clean at a larger
+      value.
