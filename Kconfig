@@ -20,3 +20,13 @@ config NICE_VIEW_VCOM_KEEPALIVE_INTERVAL_MS
       How often to force a full-screen redraw. Lower is safer for the panel but
       costs a little more power. Raise it if the image stays clean at a larger
       value.
+
+config ZMK_DONGLE_USB_BATTERY
+    bool "Report split peripheral battery to the host over USB HID"
+    depends on ZMK_USB && ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
+    help
+      Adds a second USB HID interface exposing a Battery Strength field so a
+      USB-connected host (e.g. a dongle plugged in over USB, where the BLE
+      Battery Service is never seen) can read the keyboard halves' charge and
+      raise a low-battery warning. Reports the lowest level among the connected
+      split peripherals. Requires CONFIG_USB_HID_DEVICE_COUNT >= 2.
