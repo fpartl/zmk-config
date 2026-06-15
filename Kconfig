@@ -30,3 +30,16 @@ config ZMK_DONGLE_USB_BATTERY
       Battery Service is never seen) can read the keyboard halves' charge and
       raise a low-battery warning. Reports the lowest level among the connected
       split peripherals. Requires CONFIG_USB_HID_DEVICE_COUNT >= 2.
+
+config DEDA_DISPLAY
+    bool "Custom nice!view peripheral status screen with a custom image"
+    depends on ZMK_DISPLAY
+    select LV_USE_IMG
+    select LV_USE_CANVAS
+    select LV_FONT_MONTSERRAT_16
+    help
+      Provides our own zmk_display_status_screen() (src/deda_display/) that shows
+      a custom 140x68 art image plus the battery and connection status, instead
+      of nice_view's built-in balloon/mountain widget. Set
+      CONFIG_NICE_VIEW_WIDGET_STATUS=n alongside this so nice_view does not also
+      compile its own status screen (which would clash).
